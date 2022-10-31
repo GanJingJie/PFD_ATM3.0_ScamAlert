@@ -1,0 +1,56 @@
+body{
+    background-color: #45506B;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    color: whitesmoke;
+}
+
+header{
+    font-family: 'Heebo';
+    padding: 0%;
+    padding-left: 50px;
+    background-color: white;
+    height: 90px;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.col-left{
+    padding-left: 80px;
+    padding-top: 90px;
+  }
+
+input  {
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+.button{
+    background-color: #45506B;
+  border: 2px solid white; 
+  border-radius: 5px;
+  width: 100px;
+  font-family: 'Roboto';
+  color: whitesmoke;
+}
+
+.submitbtn{
+    padding-left: 200px;
+}
