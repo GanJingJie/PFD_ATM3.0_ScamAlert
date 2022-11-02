@@ -20,13 +20,13 @@
 </header>
 
 <body>
-    <h1>enter pin number</h1>
+    <h1>Please enter 6-digit pin number</h1>
 
     <div class="enterpinform">
-        <form action="/pin.html">
+        <form action="/index.html">
             <div class="pinnum">
                 <label for="pinnum"></label>
-                <input type="password" id="pinnum" name="pinnum" required><br><br>
+                <input type="password" id="pinnum" name="pinnum" required min="6" max="6" value="111111"><br><br>
             </div>
             <div class="submitbtn">
                 <input type="submit" value="Enter" class="button">
