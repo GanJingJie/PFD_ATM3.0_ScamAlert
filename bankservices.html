@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +9,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Roboto:ital,wght@0,500;1,400&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css">
     <title>Virtual ATM</title>
 </head>
 
@@ -24,21 +23,12 @@
     </div>
 </header>
 
-<body class>
-    <h1 class="enterpinform">enter pin number</h1>
-
-    <div class="enterpinform">
-        <form action="/test.html" name="PinForm" onsubmit="return(validatePin());">
-            <div class="pinnum">
-                <label for="pinnum"></label>
-                <input type="password" placeholder="123" id="pinnum" name="pinnum" required><br><br>
-            </div>
-            <div class="submitbtn">
-                <input type="submit" value="Submit" class="button">
-            </div>
-        </form>
+<body>
+    <div class = "bscol-left">
+        <button class = "bankservicesbutton">Cash Withdrawal</button>
+        <div class = "column">
+            <button class = "bankservicesbutton">Balance Inquiry</button>
+        </div>
     </div>
-
 </body>
-
 </html>
