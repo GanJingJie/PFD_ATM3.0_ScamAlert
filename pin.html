@@ -3,6 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,21 +17,24 @@
 
 <header>
     <div class="bannerimg">
+        <svg width="10" height="90">
+            <rect width="300" height="100" style="fill: #EC1C24;stroke-width:3;">
+        </svg>
         <img src="images/ocbcbanner.png" style="width: 200px;height:100px;object-fit:contain;">
     </div>
 </header>
 
 <body>
-    <h1>Please enter 6-digit pin number</h1>
+    <h1>Please Enter your pin number</h1>
 
     <div class="enterpinform">
-        <form action="/index.html">
+        <form action="/test.html" name="PinForm" onsubmit="return(validatePin());">
             <div class="pinnum">
                 <label for="pinnum"></label>
-                <input type="password" id="pinnum" name="pinnum" required min="6" max="6" value="111111"><br><br>
+                <input type="password" id="pinnum" name="pinnum" required><br><br>
             </div>
             <div class="submitbtn">
-                <input type="submit" value="Enter" class="button">
+                <input type="submit" value="Submit" class="button">
             </div>
         </form>
     </div>
