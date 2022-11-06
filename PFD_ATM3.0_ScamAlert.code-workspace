@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../../../Downloads/bootstrap-5.2.2-dist"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "PFD_ATM3.0_ScamAlert"
+  }
+}

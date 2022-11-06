@@ -21,3 +21,10 @@ function validatePin() {
     }
     return (true);
 }
+
+//tap anywhere on screen to begin
+function clickFunction() {
+    document.getElementById("click").onclick = function() {
+        location.href = "/index.html";
+    };
+}
