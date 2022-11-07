@@ -16,6 +16,7 @@ function validatePin() {
         document.PinForm.pinnum.value.length != 6) {
 
         alert("Please provide your 6-digit PIN number in the format ######.");
+        window.location.assign("/incorrectPin.html")
         document.PinForm.pinnum.focus();
         return false;
     }

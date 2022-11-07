@@ -55,16 +55,6 @@ input  {
   width: 350px;
 }
 
-.bankservicesbutton:hover{
-  background-color: lightgrey;
-  transition: 0.3s;
-}
-
-.bscol-left{
-  padding-left: 18%;
-  padding-top: 100px;
-}
-
 .welcome-container{
   display: flex;
   justify-content: center;
@@ -100,4 +90,13 @@ input  {
   margin: 10px;
   padding: 10px;
   margin-top: 100px;
+}
+
+.container text-centre{
+  width: 100%;
+
+}
+
+.btn-secondary{
+  width: 100%;
 }
