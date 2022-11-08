@@ -27,19 +27,17 @@
 </header>
 
 <body>
-
     <div class="container text-center">
-        <div class="pin-container">
-            <h1>PIN entered is incorrect!</h1>
-            <p>You have 2 more tries</p>
-            <p>Please enter your PIN number</p>
-            <form action="/bankservices.html" name="PinForm" onsubmit="return(validatePin());">
+        <div class="main-container">
+            <h2>Incorrect PIN</h2>
+            <p>Please re-enter your PIN number</p>
+            <form action="/bankservices.html" name="PinForm" onsubmit="return(incorrectPin());">
                 <div class="pinnum">
                     <label for="pinnum"></label>
                     <input type="password" id="pinnum" name="pinnum" required><br><br>
                 </div>
                 <div class="submitbtn">
-                    <input type="submit" value="Submit" class="btn btn-secondary btn-sm">
+                    <input type="submit" value="Enter" class="btn btn-secondary btn-sm">
                 </div>
             </form>
         </div>

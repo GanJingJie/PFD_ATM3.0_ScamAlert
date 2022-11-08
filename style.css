@@ -12,18 +12,11 @@ header{
     font-family: 'Heebo';
     padding-left: 50px;
     background-color: white;
-    height: 90px;
-    margin-bottom: 20px;
+    height: 80px;
+    margin-bottom: 50px;
 }
 
-h1{
-    padding:10px;
-}
 
-.col{
-  margin: 10px;
-  padding: 10px;
-}
 
 input  {
     text-align: center;
@@ -33,26 +26,10 @@ input  {
     border-radius: 5px;
 }
 
-
 .bannerimg {
   position: absolute;
   top: -10px;
   left: 0px;
-}
-
-.bankservicesbutton {
-  background-color: #FFFFFF; 
-  border: none;
-  color: black;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 24px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px;
-  width: 350px;
 }
 
 .welcome-container{
@@ -86,10 +63,8 @@ input  {
   50% { border-color: orange }
 }
 
-.pin-container{
-  margin: 10px;
-  padding: 10px;
-  margin-top: 100px;
+.main-container{
+  margin-top: 30px;
 }
 
 .container text-centre{
@@ -98,5 +73,17 @@ input  {
 }
 
 .btn-secondary{
-  width: 100%;
+  width: 20%;  
+}
+
+
+.btn-light{
+  display: flex;
+  justify-content: center;
+  background-color: #e2e5de;
+  width: 300px;
+  height: 80px;
+  margin-left: 0px;
+  align-items: center;
+  color: rgb(74, 72, 72);
 }
