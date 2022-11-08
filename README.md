@@ -5,5 +5,9 @@
 3D Face recognition <br/>
 Signature
 
-## Complete by week 3
-Wireframe and if possible user interface
+## Complete by week 4
+### Wireframe updates:
+UI and Design
+### OTP
+### Database
+
