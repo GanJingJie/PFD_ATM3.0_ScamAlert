@@ -17,7 +17,7 @@ function validatePin() {
         document.PinForm.pinnum.value.length != 6) 
     {
         alert("Please provide your 6-digit PIN number in the format ######.");
-        window.location.assign("/incorrectPin.html")
+        window.location.assign("incorrectPin.html")
         document.PinForm.pinnum.focus();
         return false;
     }
@@ -33,17 +33,17 @@ function incorrectPin(){
     }
     if((document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||document.PinForm.pinnum.value.length != 6)>3)
     {
-        window.location.assign("/blockCard.html");
+        window.location.assign("blockCard.html");
         return false;
     }
-    window.location.assign("/blockCard.html");
+    window.location.assign("blockCard.html");
     return (false);
 }
 
 //tap anywhere on screen to begin
 function clickFunction() {
     document.getElementById("click").onclick = function() {
-        location.href = "/index.html";
+        location.href = "index.html";
     };
 }
 
@@ -53,7 +53,7 @@ function clickFunction() {
 function withdrawAmt(){
     if(document.withdrawForm.amt.value > 500)
     {
-        window.location.assign('/otp.html')
+        window.location.assign('otp.html')
         return (false);
     }    
     return (true);
