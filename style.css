@@ -16,8 +16,6 @@ header{
     margin-bottom: 50px;
 }
 
-
-
 input  {
     text-align: center;
     width: 300px;
@@ -31,7 +29,6 @@ input  {
   top: -10px;
   left: 0px;
 }
-
 .welcome-container{
   display: flex;
   justify-content: center;
@@ -75,7 +72,6 @@ input  {
 .btn-secondary{
   width: 20%;  
 }
-
 
 .btn-light{
   display: flex;
