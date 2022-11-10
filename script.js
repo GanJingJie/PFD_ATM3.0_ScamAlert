@@ -43,7 +43,7 @@ function incorrectPin(){
 //tap anywhere on screen to begin
 function clickFunction() {
     document.getElementById("click").onclick = function() {
-        location.href = "index.html";
+        location.href = "cardnum.html";
     };
 }
 

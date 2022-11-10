@@ -1,15 +1,25 @@
 body{
     background-color: #ec1c24;
-    font-family: 'Roboto', sans-serif;
-    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400px;
+    font-size: small;
+    height: auto;
     width: 100%;
     margin: 0%;
     padding: 0%;
     color: whitesmoke;
 }
 
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;  
+}
+h4{
+  font-weight: 400;
+  font-size: medium;
+}
 header{
-    font-family: 'Heebo';
+    font-family: 'Montserrat', sans-serif;
     padding-left: 50px;
     background-color: white;
     height: 80px;
@@ -20,8 +30,10 @@ input  {
     text-align: center;
     width: 300px;
     height: 40px;
-    border: 2px solid white;
+    border: none;
     border-radius: 5px;
+    background-image: linear-gradient(to right, #e2e5de, #96acbc );
+
 }
 
 .bannerimg {
@@ -69,17 +81,56 @@ input  {
 
 }
 
-.btn-secondary{
-  width: 20%;  
-}
-
-.btn-light{
+.btn-primary{
+  font-size: small;
   display: flex;
   justify-content: center;
   background-color: #e2e5de;
-  width: 300px;
+  background-image: linear-gradient(to right, #e2e5de, #96acbc );
+  width: 150px;
   height: 80px;
-  margin-left: 0px;
-  align-items: center;
-  color: rgb(74, 72, 72);
+  align-items:end;
+  color: grey;
+  border: none;
 }
+
+.btn-secondary{
+  width: 20%;  
+  background-image: linear-gradient(to right, #7d8597, #5c677d );
+border: none;
+}
+
+.btn-light{
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  background-color: #e2e5de;
+  background-image: linear-gradient(to right, #e2e5de, #96acbc );
+  width: 200px;
+  height: 60px;
+  align-items: center;
+  color: grey;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+footer{
+  position: fixed;  
+  bottom: 0%;
+  width: 100%;
+  padding: 15px;
+  background-color:white;
+  color: #ec1c24;
+}
+
+.side-container{
+  display: flex;
+  float: right;
+  width: 50%;
+}
+
