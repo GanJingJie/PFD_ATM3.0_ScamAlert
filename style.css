@@ -23,7 +23,7 @@ header{
     padding-left: 50px;
     background-color: white;
     height: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;    
 }
 
 input  {
@@ -41,44 +41,20 @@ input  {
   top: -10px;
   left: 0px;
 }
+
 .welcome-container{
-  display: flex;
-  justify-content: center;
-}
-.typewriter h1 {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-    display: flex;
-    justify-content: center;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+  width: 80%;
+  margin-top: 0px;
+  font-size: 20;
+  margin-left: 60px;
 }
 
 .main-container{
-  margin-top: 30px;
+  margin-top: 40px;  
 }
 
 .container text-centre{
   width: 100%;
-
 }
 
 .btn-primary{
@@ -109,7 +85,7 @@ border: none;
   width: 200px;
   height: 60px;
   align-items: center;
-  color: grey;
+  color: rgb(46, 44, 44);
   border: none;
 }
 
@@ -134,3 +110,104 @@ footer{
   width: 50%;
 }
 
+
+.o-card{
+  width: 300px;
+  height: auto;
+  margin-top: 10px;
+}
+
+#hideMe {
+  -moz-animation: cssAnimation 0s ease-in 4s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 4s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 4s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 4s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      overflow:hidden;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+      width:0;
+      height:0;
+      visibility:hidden;
+  }
+}
+
+.showMe {
+  animation: cssAnimation2 0s 4.5s forwards;
+  visibility: hidden;
+}
+
+@keyframes cssAnimation2 {
+  to   { visibility: visible; }
+}
+#hideMe2{
+  -webkit-animation: cssAnimation5 0s ease-in 10s forwards;
+  /* Safari and Chrome */
+  animation: cssAnimation5 0s ease-in 10s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes cssAnimation5 {
+  to {
+      width:0;
+      height:0;
+      overflow:hidden;
+  }
+}
+@-webkit-keyframes cssAnimation5 {
+  to {
+      width:0;
+      height:0;
+      visibility:hidden;
+  }
+}
+
+#showMe2{
+  animation: cssAnimation3 0s 10s forwards;
+  visibility: hidden;
+}
+@keyframes cssAnimation3 {
+  to   { visibility: visible; }
+}
+
+.servicebtn{
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  background-color: #e2e5de;
+  background-image: linear-gradient(to right, #e2e5de, #96acbc );
+  width: 300px;
+  height: 80px;
+  align-items: center;
+}
+
+i{
+  z-index: 2;
+  font-size: medium;
+  color: #e2e5de;
+  font-weight: bolder;
+}
+
+ul{
+  text-align: right;
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  display: inline-block;  
+}

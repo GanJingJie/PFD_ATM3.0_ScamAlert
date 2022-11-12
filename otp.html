@@ -12,7 +12,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -28,11 +29,11 @@
 <body>
 
     <div class="container text-center">
-        <div class="pin-container">
+        <div class="main-container">
             <h1>You've exceeded your withdrawal limit</h1>
             <p>An OTP has been sent to your resgistered phone number.</p>
-            <p>Please enter the OTP to resume your transaction.</p>
-            <form action="/bankservices.html" name="PinForm" onsubmit="return(validatePin());">
+            <p>Please enter the OTP to resume your session with us.</p>
+            <form action="bankservices.html" name="PinForm" onsubmit="return(validatePin());">
                 <div class="pinnum">
                     <label for="pinnum"></label>
                     <input type="password" id="pinnum" name="pinnum" required><br><br>

@@ -47,14 +47,36 @@ function clickFunction() {
     };
 }
 
+//tap to play audio
+function play() {
+    document.getElementById("thankaudio").play();
+    };
+setTimeout("play()", 10000);
+
+//endpage click to go back to index for the next customer
+function clickFunction2() {
+    document.getElementById("click2").onclick = function() {
+        location.href = "index.html";
+    };
+}
+
+
 //$(":input").inputmask();
 
 //withdraw an amount
 function withdrawAmt(){
-    if(document.withdrawForm.amt.value > 500)
+    if(document.withdrawForm.amt.value > 500 )
     {
         window.location.assign('otp.html')
         return (false);
     }    
     return (true);
 }
+
+//current date time
+var time = new Date().toLocaleTimeString();
+var date = new Date().toDateString();
+var datetime = date + ' | ' + time;
+console.log(datetime);
+ // it will represent date in the console of developers tool
+document.getElementById("date-time").textContent = datetime; // represent on html page
