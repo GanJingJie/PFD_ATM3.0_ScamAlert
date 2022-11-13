@@ -24,6 +24,7 @@ btnContinue.addEventListener('click', () => {
     const phoneNumberExist = phoneNumber.value.match(/^\d{8}$/g);
 */
 
+//on click send OTP button, alert with otp appears + go to next conatiner 
 function genOTP(){
     document.getElementById("sendOTP").onclick = function(){
         // handle OTP
@@ -36,8 +37,6 @@ function genOTP(){
 
     };
 }
-
-
 
 /*
     if (phoneNumberExist) {
@@ -113,6 +112,7 @@ btnVerify.addEventListener('click', () => {
         setTimeout(() => {
             window.location.href = "cash.html";
         }, 3000);
+        
     } else {
         icon.classList.remove('fa-check-circle');
         icon.classList.add('fa-times-circle');

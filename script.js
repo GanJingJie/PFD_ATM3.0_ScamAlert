@@ -47,11 +47,18 @@ function clickFunction() {
     };
 }
 
-//tap to play audio
+//tap to play audio for thank.html
 function play() {
     document.getElementById("thankaudio").play();
     };
-setTimeout("play()", 10000);
+setTimeout("play()", 8000);
+
+//play cash + thank audio  after delay
+function playCashAudio(){
+    document.getElementById("cashaudio").play();
+};
+setTimeout("playCashAudio()", 10000);
+
 
 //endpage click to go back to index for the next customer
 function clickFunction2() {
