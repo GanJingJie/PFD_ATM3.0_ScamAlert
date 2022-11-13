@@ -67,7 +67,7 @@ function clickFunction2() {
 function withdrawAmt(){
     if(document.withdrawForm.amt.value > 500 )
     {
-        window.location.assign('otp.html')
+        window.location.assign('otpindex.html')
         return (false);
     }    
     return (true);

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual ATM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="otpstyle.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!--<script src="script.js"></script>-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+
+<body class="d-flex align-items-center justify-content-center">
+    <div class="container-content text-center">
+        <div class="container text-center">
+            <div class="main-container">
+                <h1>You've exceeded your withdrawal limit!</h1>
+                <h4>To resume your banking session, help us verify that its you. Click the enter key to begin the
+                    2-factor authentication process.</h4>
+
+                <button class="btn btn-continue" onclick="genOTP()" id="sendOTP">Send OTP</button>
+                <p>This will send an auto-generated 4-digit OTP (One-Time Pin) to your registered mobile
+                    number.</p>
+
+                <!----OTP input container begins here------>
+                <div class="otp-container go-right">
+                    <div class="mainotp-container">
+                        <h1>Authentication Code</h1>
+                        <div class="text">
+                            <h4>
+                                The OTP will expire in
+                                <span class="expire" style="color: #96acbc; font-weight:bolder">30s</span>
+                            </h4>
+                        </div>
+                        <div class="otp-input text-center">
+                            <input type="text" maxlength="1" class="input" />
+                            <input type="text" maxlength="1" class="input" />
+                            <input type="text" maxlength="1" class="input" />
+                            <input type="text" maxlength="1" class="input" />
+                        </div>
+                        <span class="text-danger" style="color: black;"></span>
+                        <button class="btn btn-verify align-items-center justify-content-between ">
+                            Enter
+                        </button>
+
+                        <div class="resend-code">
+                            Didn't receive code?
+                            <span class="btn-resend">Request again</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="box-verify" style="color: white;">
+                    <i class="fas fa-check-circle"></i>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+
+    <!--Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <div>
+            <p>If you need any assistance please contact us at 1800 363 3333</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
