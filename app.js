@@ -106,20 +106,20 @@ btnVerify.addEventListener('click', () => {
         boxVerify.querySelector('p').innerHTML = `
         Your account has been <br/> verified successfully
         <br/>
-        <span class='text-muted'>Please wait while redirecting</span>
+        <span>Please wait while redirecting</span>
         `;
 
         setTimeout(() => {
             window.location.href = "cash.html";
         }, 3000);
-        
+
     } else {
         icon.classList.remove('fa-check-circle');
         icon.classList.add('fa-times-circle');
         boxVerify.querySelector('p').innerHTML = `
         Verification failed
         <br/>
-        <span class='text-muted'>Please <span class='btn-return text-dark'>try again</span></span>
+        <span>Please <span class='btn-return' style='font-weight:bolder';>try again</span></span>
         `;
     }
     boxVerify.classList.add('active');
