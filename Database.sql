@@ -1,4 +1,13 @@
+use master
+GO
+IF NOT EXISTS (
+   SELECT name
+   FROM sys.databases
+   WHERE name = N'atmscamalert'
+)
+
 create database atmscamalert;
+GO
 
 create table users(
 	account_no varchar(9),
