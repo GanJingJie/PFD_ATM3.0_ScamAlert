@@ -50,7 +50,14 @@ input  {
 }
 
 .main-container{
-  margin-top: 40px;  
+  
+  margin-top: 30px;  
+  background-color: white;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: black;
+  padding-right: 0;
   
 }
 
@@ -212,4 +219,9 @@ a{
 }
 li{
   display: inline-block;  
+}
+
+.servicecolbtn{
+  text-align: left;
+
 }
