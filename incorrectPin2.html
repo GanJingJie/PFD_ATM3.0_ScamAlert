@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual ATM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<header>
+    <div class="bannerimg">
+        <svg width="10" height="90">
+            <rect width="300" height="100" style="fill: #EC1C24;stroke-width:3;">
+        </svg>
+        <img src="images/ocbcbanner.png" style="width: 200px;height:100px;object-fit:contain;">
+    </div>
+</header>
+
+<body>
+    <div class="container text-center">
+        <div class="main-container">
+            <h2>Incorrect PIN</h2>
+            <p>Please re-enter your PIN number</p>
+            <p>You have 1 more tries</p>
+            <form action="bankservices.html" name="PinForm" onsubmit="return(incorrectPin2());">
+                <div class="pinnum">
+                    <label for="pinnum"></label>
+                    <input type="password" id="pinnum" name="pinnum" required><br><br>
+                </div>
+                <div class="submitbtn">
+                    <input type="submit" value="Enter" class="btn btn-secondary btn-sm">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
