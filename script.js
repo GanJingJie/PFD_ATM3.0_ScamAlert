@@ -72,7 +72,7 @@ function clickFunction2() {
 
 //withdraw an amount // change 500 here to user's {dailylimit}
 function withdrawAmt(){
-    if(document.withdrawForm.amt.value > 500 )
+    if(document.withdrawForm.amt.value > 500)
     {
         window.location.assign('otpindex.html')
         return (false);
