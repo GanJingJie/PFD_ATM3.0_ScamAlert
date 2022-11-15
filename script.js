@@ -33,13 +33,26 @@ function incorrectPin(){
     }
     if((document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||document.PinForm.pinnum.value.length != 6)>3)
     {
+        window.location.assign("incorrectPin2.html");
+        return false;
+    }
+    window.location.assign("incorrectPin2.html");
+    return (false);
+}
+
+function incorrectPin2(){
+    if((document.PinForm.pinnum.value.length == 6))
+    {
+        return true;
+    }
+    if((document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||document.PinForm.pinnum.value.length != 6)>3)
+    {
         window.location.assign("blockCard.html");
         return false;
     }
     window.location.assign("blockCard.html");
     return (false);
 }
-
 //tap anywhere on screen to begin
 function clickFunction() {
     document.getElementById("click").onclick = function() {
