@@ -34,7 +34,6 @@ function genOTP(){
         console.log(OTP);
         otpContainer.classList.remove('go-right');
         otpContainer.classList.add('active-box');
-
     };
 }
 
@@ -195,3 +194,37 @@ function activeStateOTP() {
     alert(`Your OTP: ${OTP}`);
     console.log(OTP);
 }
+
+/*
+//original code
+        OTP = randomOTP();
+        handleCountDown();
+        alert(`Your OTP: ${OTP}`);
+        console.log(OTP);
+        otpContainer.classList.remove('go-right');
+        otpContainer.classList.add('active-box');
+  */      
+       
+//testing send otp to myNotifier
+const btn = document.getElementById('js-notification')
+btn.addEventListener('click', () => {
+    OTP = randomOTP();
+    handleCountDown();
+    console.log(OTP);
+    otpContainer.classList.remove('go-right');
+    otpContainer.classList.add('active-box');
+  fetch('https://api.mynotifier.app', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    
+    body: JSON.stringify({
+      apiKey: '6edfd5fe-bb51-4f37-b4be-989bcda3f38e', // Input your own api key here.
+      message: `Your OTP: ${OTP}`, // The message you want to send to yourself/team.
+      description: 'Please enter your OTP within 30s', // A more descriptive message. It's optional.
+      type: 'success', // info, error, warning or success
+      project: '', // If you have more projects on your account then you can specify the project. This is optional.
+    }),
+  })
+})
