@@ -1,4 +1,4 @@
-//Account Number Validation
+//Account Number Validation // change 8 here to user's {acctnum}
 function validate() {
     if (document.myForm.acctnum.value == "" || isNaN(document.myForm.acctnum.value) ||
         document.myForm.acctnum.value.length != 8) {
@@ -10,7 +10,7 @@ function validate() {
     return (true);
 }
 
-//PIN Number Validation
+//PIN Number Validation // change 6 here to user's {pin}
 function validatePin() {
     //if false
     if (document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||
@@ -25,7 +25,7 @@ function validatePin() {
     return (true);
 }
 
-//if incorrect pin more than 3 times
+//if incorrect pin more than 3 times // change 6 here to user's {pin}
 function incorrectPin(){
     if((document.PinForm.pinnum.value.length == 6))
     {
@@ -70,7 +70,7 @@ function clickFunction2() {
 
 //$(":input").inputmask();
 
-//withdraw an amount
+//withdraw an amount // change 500 here to user's {dailylimit}
 function withdrawAmt(){
     if(document.withdrawForm.amt.value > 500 )
     {
