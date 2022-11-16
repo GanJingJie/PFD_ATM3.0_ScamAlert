@@ -8,6 +8,8 @@ Signature
 ## Complete by week 4
 ### Wireframe updates:
 UI and Design
+- Completed
 ### OTP
+- Completed
 ### Database
 
