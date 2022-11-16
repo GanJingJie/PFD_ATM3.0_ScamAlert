@@ -14,9 +14,9 @@ function validate() {
 function validatePin() {
     //if false
     if (document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||
-        document.PinForm.pinnum.value.length != 6) 
+        document.PinForm.pinnum.value.length != 6 || document.PinForm.pinnum.value == "654321") 
     {
-        alert("Please provide your 6-digit PIN number in the format ######.");
+        alert("Please provide the correct 6-digit PIN number in the format ######.");
         window.location.assign("incorrectPin.html")
         document.PinForm.pinnum.focus();
         return false;
