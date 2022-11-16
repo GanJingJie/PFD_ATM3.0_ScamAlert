@@ -27,30 +27,32 @@ function validatePin() {
 
 //if incorrect pin more than 3 times // change 6 here to user's {pin}
 function incorrectPin(){
-    if((document.PinForm.pinnum.value.length == 6))
-    {
-        return true;
-    }
-    if((document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||document.PinForm.pinnum.value.length != 6)>3)
+    if((document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||document.PinForm.pinnum.value.length != 6
+    || document.PinForm.pinnum.value == "654321"))
     {
         window.location.assign("incorrectPin2.html");
-        return false;
+        return false;    
+    }
+    else if((document.PinForm.pinnum.value.length == 6))
+    {
+        return true;
     }
     window.location.assign("incorrectPin2.html");
     return (false);
 }
 
 function incorrectPin2(){
-    if((document.PinForm.pinnum.value.length == 6))
+    if((document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||document.PinForm.pinnum.value.length != 6
+    || document.PinForm.pinnum.value == "654321"))
+    {
+        window.location.assign("blockcard.html");
+        return false;    
+    }
+    else if((document.PinForm.pinnum.value.length == 6))
     {
         return true;
     }
-    if((document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||document.PinForm.pinnum.value.length != 6)>3)
-    {
-        window.location.assign("blockCard.html");
-        return false;
-    }
-    window.location.assign("blockCard.html");
+    window.location.assign("blockcard.html");
     return (false);
 }
 //tap anywhere on screen to begin
