@@ -1,3 +1,5 @@
+const pin = 123456;
+
 //Account Number Validation // change 8 here to user's {acctnum}
 function validate() {
     if (document.myForm.acctnum.value == "" || isNaN(document.myForm.acctnum.value) ||
@@ -14,9 +16,8 @@ function validate() {
 function validatePin() {
     //if false
     if (document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||
-        document.PinForm.pinnum.value.length != 6 || document.PinForm.pinnum.value == "654321") 
+        document.PinForm.pinnum.value.length != 6 || document.PinForm.pinnum.value != pin) 
     {
-        alert("Please provide the correct 6-digit PIN number in the format ######.");
         window.location.assign("incorrectPin.html")
         document.PinForm.pinnum.focus();
         return false;
@@ -28,7 +29,7 @@ function validatePin() {
 //if incorrect pin more than 3 times // change 6 here to user's {pin}
 function incorrectPin(){
     if((document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||document.PinForm.pinnum.value.length != 6
-    || document.PinForm.pinnum.value == "654321"))
+    || document.PinForm.pinnum.value != pin))
     {
         window.location.assign("incorrectPin2.html");
         return false;    
@@ -43,7 +44,7 @@ function incorrectPin(){
 
 function incorrectPin2(){
     if((document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||document.PinForm.pinnum.value.length != 6
-    || document.PinForm.pinnum.value == "654321"))
+    || document.PinForm.pinnum.value != pin))
     {
         window.location.assign("blockcard.html");
         return false;    
