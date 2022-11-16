@@ -208,7 +208,6 @@ function activeStateOTP() {
   })
 }
 
-
 /*
 //original code
         OTP = randomOTP();
