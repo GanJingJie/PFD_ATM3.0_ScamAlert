@@ -53,6 +53,11 @@ input  {
   color: black;
   text-align: center;
 }
+
+.pad{
+  margin-left: 80px;
+}
+
 .logo{
   width: 400px;
   height: auto;
