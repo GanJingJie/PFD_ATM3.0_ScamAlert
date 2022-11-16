@@ -32,8 +32,7 @@ input  {
     height: 40px;
     border: none;
     border-radius: 5px;
-    background-image: linear-gradient(to right, #e2e5de, #96acbc );
-
+    background-color:#e2e5de;
 }
 
 .bannerimg {
@@ -43,22 +42,23 @@ input  {
 }
 
 .welcome-container{
-  width: 80%;
-  margin-top: 0px;
   font-size: 20;
-  margin-left: 60px;
-}
-
-.main-container{
-  
-  margin-top: 30px;  
-  background-color: white;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: whitesmoke;
   padding: 15px;
-  border: 1px solid white;
   border-radius: 10px;
   color: black;
-  padding-right: 0;
-  
+  text-align: center;
+}
+.logo{
+  width: 400px;
+  height: auto;
+}
+.main-container{
+  margin-top: 30px;  
 }
 
 .container text-centre{
@@ -80,7 +80,7 @@ input  {
 
 .btn-secondary{
   width: 25%;  
-  background-image: linear-gradient(to right, #7d8597, #5c677d );
+  background-color: #96acbc;
 border: none;
 }
 
@@ -90,8 +90,8 @@ border: none;
   justify-content: center;
   background-color: #e2e5de;
   background-image: linear-gradient(to right, #e2e5de, #96acbc );
-  width: 200px;
-  height: 60px;
+  width: 250px;
+  height: 70px;
   align-items: center;
   color: rgb(46, 44, 44);
   border: none;
@@ -102,7 +102,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 
 footer{
   position: fixed;  
@@ -119,7 +118,6 @@ footer{
   width: 50%;
 }
 
-
 .o-card{
   width: 300px;
   height: auto;
@@ -127,12 +125,8 @@ footer{
 }
 
 #hideMe {
-  -moz-animation: cssAnimation 0s ease-in 4s forwards;
-  /* Firefox */
   -webkit-animation: cssAnimation 0s ease-in 4s forwards;
   /* Safari and Chrome */
-  -o-animation: cssAnimation 0s ease-in 4s forwards;
-  /* Opera */
   animation: cssAnimation 0s ease-in 4s forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -191,7 +185,7 @@ footer{
 }
 
 .servicebtn{
-  font-size: small;
+  font-size: medium;
   display: flex;
   justify-content: center;
   background-color: #e2e5de;
@@ -199,8 +193,15 @@ footer{
   width: 300px;
   height: 80px;
   align-items: center;
+  padding:5px;
+  text-align: right;
 }
-
+ .servicebtn i{
+  color: black;
+  text-align: left;
+  padding: 5px;
+  font-size: medium;
+ }
 i{
   z-index: 2;
   font-size: medium;
@@ -220,8 +221,15 @@ a{
 li{
   display: inline-block;  
 }
-
-.servicecolbtn{
-  text-align: left;
-
+.cashbtn{
+  font-size: medium;
+}
+.second-container{
+  margin-top: 100px;
+}
+.btn-outline-secondary{
+  margin: 8px;
+  width: 160px;
+  background-color: #e2e5de;
+  border: none;
 }
