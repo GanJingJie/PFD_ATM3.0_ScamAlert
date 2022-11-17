@@ -199,7 +199,7 @@ function activeStateOTP() {
     },
     
     body: JSON.stringify({
-      apiKey: 'f8e4f98f-d745-448f-b069-f3a87238ea63', // Input your own api key here.
+      apiKey: 'cd3b4d4b-344e-49c5-aae5-dae24a2bc80d', // Input your own api key here.
       message: `Your OTP: ${OTP}`, // The message you want to send to yourself/team.
       description: 'Please enter your OTP within 30s', // A more descriptive message. It's optional.
       type: 'success', // info, error, warning or success
@@ -233,7 +233,7 @@ btn.addEventListener('click', () => {
     },
     
     body: JSON.stringify({
-      apiKey: 'f8e4f98f-d745-448f-b069-f3a87238ea63', // Input your own api key here.
+      apiKey: 'cd3b4d4b-344e-49c5-aae5-dae24a2bc80d', // Input your own api key here.
       message: `Your OTP: ${OTP}`, // The message you want to send to yourself/team.
       description: 'Please enter your OTP within 30s', // A more descriptive message. It's optional.
       type: 'success', // info, error, warning or success

@@ -1,5 +1,14 @@
 const pin = 123456;
 
+//current date time
+var time = new Date().toLocaleTimeString();
+var date = new Date().toDateString();
+var datetime = date + ' | ' + time;
+console.log(datetime);
+ // it will represent date in the console of developers tool
+document.getElementById("date-time").textContent = datetime; // represent on html page
+
+
 //Account Number Validation // change 8 here to user's {acctnum}
 function validate() {
     if (document.myForm.acctnum.value == "" || isNaN(document.myForm.acctnum.value) ||
@@ -96,10 +105,3 @@ function withdrawAmt(){
     return (true);
 }
 
-//current date time
-var time = new Date().toLocaleTimeString();
-var date = new Date().toDateString();
-var datetime = date + ' | ' + time;
-console.log(datetime);
- // it will represent date in the console of developers tool
-document.getElementById("date-time").textContent = datetime; // represent on html page
