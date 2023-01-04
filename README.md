@@ -1,15 +1,13 @@
 # PFD_ATM3.0_ScamAlert
 
 ## Things to focus on currently
-2FA (Focus)<br/>
 3D Face recognition <br/>
 Signature
 
-## Complete by week 4
+## Things to do for ASG 2
 ### Wireframe updates:
-UI and Design
-- Completed
-### OTP
-- Completed
 ### Database
+Need full implementation
+### Code language
+Changing to cshtml?
 
