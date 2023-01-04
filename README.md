@@ -11,3 +11,6 @@ Need full implementation
 ### Code language
 Changing to cshtml?
 
+## Things to improve on
+Need to add additional feature. Three people need to find out about 3D face recognition
+
