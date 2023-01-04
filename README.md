@@ -13,4 +13,5 @@ Changing to cshtml?
 
 ## Things to improve on
 Need to add additional feature. Three people need to find out about 3D face recognition
+Add a feature utilizing MyNotifier again where if someone enters the pin wrongly 3 times it notifies us to change the pin?
 
