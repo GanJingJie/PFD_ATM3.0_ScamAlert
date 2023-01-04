@@ -192,7 +192,7 @@ function activeStateOTP() {
     handleCountDown();
     otpContainer.classList.remove('go-right');
     otpContainer.classList.add('active-box');
-  fetch('https://api.mynotifier.app', {
+    fetch('https://api.mynotifier.app', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

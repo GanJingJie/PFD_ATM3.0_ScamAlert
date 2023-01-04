@@ -1,4 +1,7 @@
-const pin = 123456;
+const pin = {
+    accnt: 12345678,
+    number: 123456
+}
 
 //current date time
 var time = new Date().toLocaleTimeString();
@@ -12,9 +15,9 @@ document.getElementById("date-time").textContent = datetime; // represent on htm
 //Account Number Validation // change 8 here to user's {acctnum}
 function validate() {
     if (document.myForm.acctnum.value == "" || isNaN(document.myForm.acctnum.value) ||
-        document.myForm.acctnum.value.length != 8) {
+        document.myForm.acctnum.value != pin.accnt) {
 
-        alert("Please provide an account number in the format #### ####.");
+        alert("Please provide a valid account number in the format #### ####.");
         document.myForm.acctnum.focus();
         return false;
     }
@@ -25,7 +28,7 @@ function validate() {
 function validatePin() {
     //if false
     if (document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||
-        document.PinForm.pinnum.value.length != 6 || document.PinForm.pinnum.value != pin) 
+        document.PinForm.pinnum.value != pin.number) 
     {
         window.location.assign("incorrectPin.html")
         document.PinForm.pinnum.focus();
@@ -37,13 +40,13 @@ function validatePin() {
 
 //if incorrect pin more than 3 times // change 6 here to user's {pin}
 function incorrectPin(){
-    if((document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||document.PinForm.pinnum.value.length != 6
-    || document.PinForm.pinnum.value != pin))
+    if((document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value)
+    || document.PinForm.pinnum.value != pin.number))
     {
         window.location.assign("incorrectPin2.html");
         return false;    
     }
-    else if((document.PinForm.pinnum.value.length == 6))
+    else if((document.PinForm.pinnum.value == pin.number))
     {
         return true;
     }
@@ -52,13 +55,13 @@ function incorrectPin(){
 }
 
 function incorrectPin2(){
-    if((document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||document.PinForm.pinnum.value.length != 6
-    || document.PinForm.pinnum.value != pin))
+    if((document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value)
+    || document.PinForm.pinnum.value != pin.number))
     {
         window.location.assign("blockcard.html");
         return false;    
     }
-    else if((document.PinForm.pinnum.value.length == 6))
+    else if((document.PinForm.pinnum.value == pin.number))
     {
         return true;
     }
