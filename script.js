@@ -1,6 +1,7 @@
 const pin = {
     accnt: 12345678,
-    number: 123456
+    number: 123456,
+    limit: 500
 }
 
 //current date time
@@ -24,7 +25,7 @@ function validate() {
     return (true);
 }
 
-//PIN Number Validation // change 6 here to user's {pin}
+//PIN Number Validation
 function validatePin() {
     //if false
     if (document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value) ||
@@ -38,7 +39,7 @@ function validatePin() {
     return (true);
 }
 
-//if incorrect pin more than 3 times // change 6 here to user's {pin}
+//if incorrect pin more than 3 times
 function incorrectPin(){
     if((document.PinForm.pinnum.value == "" || isNaN(document.PinForm.pinnum.value)
     || document.PinForm.pinnum.value != pin.number))
@@ -98,13 +99,23 @@ function clickFunction2() {
 
 //$(":input").inputmask();
 
-//withdraw an amount // change 500 here to user's {dailylimit}
+//withdraw an amount
 function withdrawAmt(){
-    if(document.withdrawForm.amt.value > 500)
+    if(document.withdrawForm.amt.value > pin.limit)
     {
         window.location.assign('otpindex.html')
         return (false);
     }    
     return (true);
 }
+
+function changepin(){
+    
+}
+
+
+
+
+
+
 
