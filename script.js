@@ -4,6 +4,8 @@ const pin = {
     limit: 500
 }
 
+dangerpin = false;
+
 //current date time
 var time = new Date().toLocaleTimeString();
 var date = new Date().toDateString();
@@ -110,7 +112,7 @@ function withdrawAmt(){
 }
 
 function changepin(){
-    
+    window.location.assign('changepin.html');
 }
 
 
